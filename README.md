@@ -22,10 +22,6 @@ Follow through the [Provisioning](./docs/PROVISIONING.md) guide to re-provision 
 
 The Terraform files have also been updated to include the creation of a container registry.
 
-For those interested in the terraform changes, you can see a diff of what has changed since session 3 here:
-
-[https://github.com/techreturners/devops-upskill-gke-terraform/compare/session-004-gitops](https://github.com/techreturners/devops-upskill-gke-terraform/compare/session-004-gitops)
-
 ### Step 3 - Build and push your docker image
 
 The next step is to build the docker image locally and push it up to your newly created container registry.
