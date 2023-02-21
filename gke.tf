@@ -1,19 +1,3 @@
-variable "gke_username" {
-  default     = ""
-  description = "gke username"
-}
-
-variable "gke_password" {
-  default     = ""
-  description = "gke password"
-}
-
-variable "gke_num_nodes" {
-  default     = 1
-  description = "number of gke nodes"
-}
-
-# GKE cluster
 resource "google_container_cluster" "primary" {
   name     = "${var.project_id}-gke"
   location = var.region
@@ -24,9 +8,13 @@ resource "google_container_cluster" "primary" {
   network    = google_compute_network.vpc.name
   subnetwork = google_compute_subnetwork.subnet.name
 
+  release_channel {
+    channel = "STABLE"
+  }
+
+  min_master_version = "1.23.14-gke.1800"
+
   master_auth {
-    username = var.gke_username
-    password = var.gke_password
 
     client_certificate_config {
       issue_client_certificate = false
