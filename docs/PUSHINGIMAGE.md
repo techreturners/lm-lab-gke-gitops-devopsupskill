@@ -21,7 +21,7 @@ https://github.com/techreturners/devops-bookstore-api
 Make sure Docker is running on your computer and build the docker image by running this command:
 
 ```
-docker build -t devops-bookstore-api:1.0 .
+docker build --platform linux/amd64 -t devops-bookstore-api:1.0 .
 ```
 
 That will produce a local docker image. One that we can PUSH up to your container registry.
