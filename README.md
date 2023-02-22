@@ -40,7 +40,7 @@ Great work! If you've got to here you should now be able to see the Argo Dashboa
 
 All your infrastructure is setup ready to go! Now you can head over to the GitOps repository to setup your workflow.
 
-[https://github.com/techreturners/devops-upskill-gitops](https://github.com/techreturners/devops-upskill-gitops)
+[https://github.com/techreturners/lm-lab-gitops-approach](https://github.com/techreturners/lm-lab-gitops-approach)
 
 ### FAQs
 
