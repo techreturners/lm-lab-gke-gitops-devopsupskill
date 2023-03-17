@@ -12,7 +12,7 @@ resource "google_container_cluster" "primary" {
     channel = "STABLE"
   }
 
-  min_master_version = "1.23.14-gke.1800"
+  min_master_version = "1.24.9-gke.3200"
 
   master_auth {
 
